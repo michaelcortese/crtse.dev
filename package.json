@@ -1,0 +1,10 @@
+{
+  "name": "crtse.dev",
+  "version": "1.0.0",
+  "description": "Michael Cortese's TUI Portfolio",
+  "scripts": {
+    "build": "echo 'No build step needed for static site'"
+  },
+  "author": "Michael Cortese",
+  "license": "MIT"
+} 
