@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Cortese</title>
+    <link rel="stylesheet" href="https://unpkg.com/tuicss/dist/tuicss.min.css">
+    <style>
+        body {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .tui-window {
+            width: 100%;
+            background-color: transparent;
+            height: fit-content;
+        }
+        .tui-window-header {
+            text-align: center;
+            background-color: #222;
+        }
+        .tui-window-title {
+            font-size: 2.5em;
+            padding: 0.5rem 0;
+            width: 100%;
+            text-align: center;
+        }
+        .subtitle {
+            text-align: center;
+            color: #aaa;
+            padding: 0.5rem;
+            border-top: 1px solid #333;
+            margin-bottom: 1rem;
+        }
+        .tui-panel {
+            padding: 0 2rem;
+            background-color: #222;
+        }
+        .content {
+            padding: 1rem 0;
+            color: #0f0;
+            text-align: left;
+        }
+        .interests {
+            margin-top: 1.5rem;
+            padding: 0;
+        }
+        .interests-title {
+            color: #0f0;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        .interests-list {
+            color: #0f0;
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        .interests-list li {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .interests-list li::before {
+            content: ">";
+            margin-right: 0.5rem;
+            color: #0f0;
+        }
+        .projects {
+            margin-top: 1.5rem;
+            padding: 0;
+        }
+        .projects-title {
+            color: #0f0;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        .projects-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        .projects-list li {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .projects-list li::before {
+            content: ">";
+            margin-right: 0.5rem;
+            color: #0f0;
+            display: inline-block;
+        }
+        .projects-list a {
+            color: #00f;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .projects-list a:hover {
+            color: #66f;
+            text-decoration: underline;
+        }
+        .links {
+            margin-top: 1.5rem;
+            padding: 0;
+        }
+        .links-title {
+            color: #0f0;
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+        .links-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+        }
+        .links-list li {
+            margin: 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+        .links-list li::before {
+            content: ">";
+            margin-right: 0.5rem;
+            color: #0f0;
+            display: inline-block;
+        }
+        .links-list a {
+            color: #00f;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .links-list a:hover {
+            color: #66f;
+            text-decoration: underline;
+        }
+        .tui-window-body {
+            padding-bottom: 2rem;
+            background-color: #222;
+        }
+    </style>
+</head>
+<body class="tui-bg-black">
+    <div class="tui-window">
+        <div class="tui-window-header">
+            <div class="tui-window-title">Michael Cortese</div>
+        </div>
+        <div class="tui-window-body">
+            <div class="subtitle">CS & STATS @ UW MADISON</div>
+            <div class="tui-panel">
+                <div class="content">
+                    hello, i'm michael and i love programming and all things computers!
+                </div>
+                <div class="interests">
+                    <div class="interests-title">INTERESTS</div>
+                    <ul class="interests-list">
+                        <li>rust programming</li>
+                        <li>optimization</li>
+                        <li>card games</li>
+                        <li>cooking</li>
+                        <li>djing/music</li>
+                    </ul>
+                </div>
+                <div class="projects">
+                    <div class="projects-title">PROJECTS</div>
+                    <ul class="projects-list">
+                        <li><a href="https://github.com/michaelcortese/black-scholes-price-visualizer/tree/main" target="_blank">Black-Scholes Option Pricing Visualizer</a></li>
+                        <li><a href="https://github.com/michaelcortese/rust-minimax" target="_blank">Minimax for Game of Nim</a></li>
+                    </ul>
+                </div>
+                <div class="links">
+                    <div class="links-title">LINKS</div>
+                    <ul class="links-list">
+                        <li><a href="https://github.com/michaelcortese" target="_blank">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/mcortese06/" target="_blank">LinkedIn</a></li>
+                        <li><a href="michaelcortese.pdf" target="_blank">CV</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

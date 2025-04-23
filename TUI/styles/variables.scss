@@ -1,0 +1,20 @@
+// Terminal theme colors
+$primary: rgb(0, 255, 0);    // Classic green
+$secondary: rgb(0, 0, 255);  // Blue
+$success: rgb(0, 255, 0);    // Green
+$danger: rgb(255, 0, 0);     // Red
+$warning: rgb(255, 255, 0);  // Yellow
+$info: rgb(0, 255, 255);     // Cyan
+
+// Background colors
+$background: #000000;
+$surface: #111111;
+
+// Text colors
+$text-primary: $primary;
+$text-secondary: rgb(200, 200, 200);
+$text-muted: rgb(128, 128, 128);
+
+// Border colors
+$border-color: $primary;
+$border-opacity: 0.5; 
