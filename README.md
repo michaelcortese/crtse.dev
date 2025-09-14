@@ -3,7 +3,7 @@
 Retro-styled personal portfolio using the BOOTSTRA.386 theme (Bootstrap 4.4.1 variant) with an ASCII boot intro and dynamic GitHub projects loader.
 
 ## Features
-- 1980s DOS aesthetic (BOOTSTRA.386 / Bootstrap 4.4.1 via CDN)
+- 1980s DOS aesthetic (BOOTSTRA.386 / Bootstrap 4.4.1 themed local assets)
 - ASCII boot splash with typewriter sequence (skip / disable via localStorage)
 - Dynamic GitHub repo list (cached 10 min; manual refresh button)
 - Simple static deployment (no build step)
@@ -41,10 +41,16 @@ Edit the ASCII art inside the `<pre id="intro-ascii">` block and lines array in 
 Set `localStorage.removeItem('intro_disabled_v1')` in DevTools console to see intro again if disabled.
 
 ## License Note
-BOOTSTRA.386 theme assets are Apache 2.0 (per upstream). Bootstrap is MIT. CDN links are used; no vendor dist committed. Your own content: choose a license or keep all rights reserved.
+BOOTSTRA.386 theme assets are Apache 2.0 (per upstream). Bootstrap is MIT. Local themed assets are served from `bootstrap-4.4.1-dist/` (ensure not excluded if you want them deployed). Your own content: choose a license or keep all rights reserved.
 
-## Vendor Assets
-The original `bootstrap-4.4.1-dist/` folder is intentionally ignored in git (`.gitignore`). If you need to work offline without CDN access, download the dist and remove that ignore line, or host the files yourself.
+## Vendor Assets / CDN Fallback
+Currently referencing the local themed `bootstrap.css` & `bootstrap.bundle.js` for the retro styling. If deploying to an environment where you prefer CDN:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+```
+
+Then append a small `<style>` override (colors, fonts) or host the Bootstra.386 CSS build on a CDN of your own. Keeping the local file guarantees the DOS font & palette.
 
 ## Possible Enhancements
 - Add dark/amber/green CRT theme toggles
