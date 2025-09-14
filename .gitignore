@@ -6,7 +6,7 @@ Thumbs.db
 .idea/
 
 # Archives / build artifacts
-*.zip
+# *.zip
 *.tar
 *.tar.gz
 
@@ -23,4 +23,4 @@ yarn-error.log*
 .vercel/cache/
 
 # Vendor dists (fetched via CDN instead)
-bootstrap-4.4.1-dist/
+# bootstrap-4.4.1-dist/
